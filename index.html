@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JavaScript</title>
+</head>
+<body>
+    <h1>Introducción a JavaScript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        // var nombre = prompt('¿Cuál es tu nombre?');
+        let nombre = "Emitsu";
+        document.getElementById('mensaje').innerHTML = `Bienvenido ${nombre}`;
+
+        
+    </script>
+
+    <script>
+        console.log('hola mundo');
+        console.log(55 * 3);
+        console.log(`Hola ${nombre}`);
+        console.table([1, 2, 3, 4, 5])
+        console.error('Hubo un error')
+        // console.clear() limpia la consola //
+        console.warn('Cuidado!')       
+    </script>
+
+    <script src="JS/Script.js"></script>
+
+    <script src="JS/arrays.js"></script>
+    <script src="JS/Objetos.js"></script>
+    <script src="JS/TemplateStrings.js"></script>
+    <script src="JS/funciones.js"></script>
+    <script src="JS/metodos.js"></script>
+    <script src="JS/Fechas.js"></script>
+</body>
+</html>
