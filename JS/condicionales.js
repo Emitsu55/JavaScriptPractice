@@ -68,3 +68,42 @@ switch(metodoPago) {
         console.log('Pago no realizado');
         break;    
 }
+
+// Loops - Una funcion que corre mientras una condición se cumpla
+
+//for loop- evalua la condicion antes de ejecutar el codigo
+
+for( let i = 0; i < 10; i++) {
+    console.log(`Numero: ${i}`);
+}
+
+carrito = ['producto 1', 'producto 2', 'producto 3', 'producto 4'];
+
+for(let i = 0; i < carrito.length; i++) {
+    console.log(carrito[i]);
+}
+
+// while loop - la condicion se evalua antes de ejecutar el codigo
+
+let i = 0;
+
+while( i < 10) {
+    console.log(`Numero: ${i}`);
+    i++;
+}
+
+i = 0;
+
+while( i < carrito.length) {
+    console.log(carrito[i]);
+    i++;
+}
+
+// do while - ejecuta el codigo antes de evaluar la condicion por tanto siemper se ejecuta al menos 1 vez
+
+i = 11
+
+do {
+    console.log( i );
+    i++;
+} while( i < 10 ) 
