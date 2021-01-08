@@ -87,3 +87,33 @@ let individuo2 = {
 console.log
 (individuo2);
 console.log(individuo2.anioNac());
+
+
+// prototypes
+// nos permite crear funciones que solo se utiizan en objeto en especifico
+
+function Cliente(nombre, id) {
+    this.nombre = nombre;
+    this.id = id;
+}
+
+function Producto(nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+}
+
+
+
+const producto1 = new Producto('Monitor curvo 48', '500');
+const producto3 = new Producto('smartphone', '7000');
+const cliente2 = new Cliente('Emitsu', '05');
+
+Producto.prototype.formatearProducto = function() {
+    return `El producto ${this.nombre} tiene un valor de $ ${this.precio}`;
+}
+
+Cliente.prototype.formatearCliente = function() {
+    return `El cliente ${this.nombre} tiene el id ${this.id}`;
+}
+console.log(producto3.formatearProducto);
+console.log(cliente2.formatearCliente)

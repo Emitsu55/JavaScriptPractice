@@ -35,3 +35,5 @@ let frutas = ['Banana', 'Manzana', 'Naranja', 'Pera', 'Frambueza'];
 frutas.sort(); //Ordena alfabeticamente un array
 console.table(frutas);
 
+
+
