@@ -91,7 +91,8 @@ console.log(individuo2.anioNac());
 
 // prototypes
 // nos permite crear funciones que solo se utiizan en objeto en especifico
-
+//Forma vieja
+/*
 function Cliente(nombre, id) {
     this.nombre = nombre;
     this.id = id;
@@ -116,4 +117,48 @@ Cliente.prototype.formatearCliente = function() {
     return `El cliente ${this.nombre} tiene el id ${this.id}`;
 }
 console.log(producto3.formatearProducto);
-console.log(cliente2.formatearCliente)
+console.log(cliente2.formatearCliente) */
+
+//forma nueva
+
+class Producto {
+    constructor(nombre, precio){
+        this.nombre = nombre;
+        this.precio = precio;
+    }
+
+    formatearProducto() {
+        return `El producto ${this.nombre} tiene un valor de $ ${this.precio}`;
+    }
+
+    precioProducto() {
+        return 'El precio es $' + this.precio;
+    }
+}
+
+const producto1 = new Producto('Monitor curvo 48', '500');
+const producto3 = new Producto('smartphone', '7000');
+
+console.log(producto1.formatearProducto());
+console.log(producto3.precioProducto())
+
+//herencia - una clase puede heredar propiedade de otra la sintaxis es la siguiente
+
+class Pokemon extends Producto {
+    constructor(nombre, precio, tipo) {
+        super(nombre, precio);
+        this.tipo = tipo;
+    }
+    formatearProducto(){
+        return `El pokemon ${this.nombre} es de tipo ${this.tipo}`;
+    }
+
+}
+
+const pokemon1 = new Pokemon('Gengar', 500, 'Fantasma');
+const pokemon2 = new Pokemon('Charizard', 500, 'Fuego');
+
+
+pokemon1.formatearProducto;
+console.log(pokemon1.formatearProducto());
+console.log(pokemon1);
