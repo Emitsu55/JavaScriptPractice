@@ -1,0 +1,24 @@
+{
+    "Empleados" : [
+        {
+            "id" : 1,
+            "nombre" : "Emiliano",
+            "empleo" : "Programador Web"
+        },
+        {
+            "id" : 2,
+            "nombre" : "Lauri",
+            "empleo" : "Direccion artistica"
+        },
+        {
+            "id" : 3,
+            "nombre" : "Rafael",
+            "empleo" : "Limpieza"
+        },
+        {
+            "id" : 4,
+            "nombre" : "Carolina",
+            "empleo" : "Gestion Economica"
+        }
+    ]
+}
